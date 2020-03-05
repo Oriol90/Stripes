@@ -1,0 +1,73 @@
+@import "animationStripes.scss";
+@import "fontSizes.scss";
+
+$colorFr:#244F75,#60BFBF,#8C4B7E,#F8BB44,#F24B4B;
+
+html,body{
+    height: 100vh;
+}
+
+.row{
+    margin-right: 0px;
+}
+
+@for $i from 1 to 6 {
+    #fr#{$i}{
+        height: 100vh;
+        background-color: nth($colorFr, $i);
+        padding-top: 50vh;
+        padding-bottom: 50vh;
+        padding-left: 8.4vw;
+        padding-right: 11vw;
+        color: white;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;        
+        overflow: hidden;
+        visibility: hidden;
+            animation-name: strip#{$i};
+            animation-delay: #{$i/3}s;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+    }
+    #sk#{$i}{
+        height: 100vh;
+        background-color: white;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        padding-left: 8.4vw;
+        padding-right: 11vw;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+        top: 0;
+        left: 0;
+    }
+    #fr#{$i}:hover{
+        #sk#{$i}{
+            animation-name: unskew;
+            animation-duration: 75ms;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+.skewed{
+    transform: skew(35deg);
+    background-color: white;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  @keyframes unskew {
+    0% {transform: skew(40deg);}
+    80% {transform: skew(20deg);}
+    100% {transform: skew(0deg);}
+}
+
+    
+  

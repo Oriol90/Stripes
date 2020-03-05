@@ -1,0 +1,287 @@
+@keyframes strip1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    visibility: visible; } }
+
+@keyframes strip2 {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    visibility: visible; } }
+
+@keyframes strip3 {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    visibility: visible; } }
+
+@keyframes strip4 {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    visibility: visible; } }
+
+@keyframes strip5 {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    visibility: visible; } }
+
+@media (min-width: 544px) {
+  h1 {
+    font-size: 1.5rem; }
+  /*1rem = 16px*/ }
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem; }
+  /*1rem = 16px*/ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem; }
+  /*1rem = 16px*/ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem; }
+  /*1rem = 16px*/ }
+
+html, body {
+  height: 100vh; }
+
+.row {
+  margin-right: 0px; }
+
+#fr1 {
+  height: 100vh;
+  background-color: #244F75;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  animation-name: strip1;
+  animation-delay: 0.33333s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#sk1 {
+  height: 100vh;
+  background-color: white;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  top: 0;
+  left: 0; }
+
+#fr1:hover #sk1 {
+  animation-name: unskew;
+  animation-duration: 75ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#fr2 {
+  height: 100vh;
+  background-color: #60BFBF;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  animation-name: strip2;
+  animation-delay: 0.66667s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#sk2 {
+  height: 100vh;
+  background-color: white;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  top: 0;
+  left: 0; }
+
+#fr2:hover #sk2 {
+  animation-name: unskew;
+  animation-duration: 75ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#fr3 {
+  height: 100vh;
+  background-color: #8C4B7E;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  animation-name: strip3;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#sk3 {
+  height: 100vh;
+  background-color: white;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  top: 0;
+  left: 0; }
+
+#fr3:hover #sk3 {
+  animation-name: unskew;
+  animation-duration: 75ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#fr4 {
+  height: 100vh;
+  background-color: #F8BB44;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  animation-name: strip4;
+  animation-delay: 1.33333s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#sk4 {
+  height: 100vh;
+  background-color: white;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  top: 0;
+  left: 0; }
+
+#fr4:hover #sk4 {
+  animation-name: unskew;
+  animation-duration: 75ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#fr5 {
+  height: 100vh;
+  background-color: #F24B4B;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  animation-name: strip5;
+  animation-delay: 1.66667s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+#sk5 {
+  height: 100vh;
+  background-color: white;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  padding-left: 8.4vw;
+  padding-right: 11vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  top: 0;
+  left: 0; }
+
+#fr5:hover #sk5 {
+  animation-name: unskew;
+  animation-duration: 75ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+.skewed {
+  transform: skew(35deg);
+  background-color: white;
+  position: absolute;
+  opacity: 0.1; }
+
+@keyframes unskew {
+  0% {
+    transform: skew(40deg); }
+  80% {
+    transform: skew(20deg); }
+  100% {
+    transform: skew(0deg); } }
