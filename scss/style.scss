@@ -28,8 +28,8 @@ html,body{
         overflow: hidden;
         visibility: hidden;
             animation-name: strip#{$i};
-            animation-delay: #{$i/3}s;
-            animation-duration: 2s;
+            animation-delay: #{$i/5}s;
+            animation-duration: 1.5s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
     }
@@ -60,7 +60,7 @@ html,body{
     transform: skew(35deg);
     background-color: white;
     position: absolute;
-    opacity: 0.1;
+    opacity: 0.05;
   }
 
   @keyframes unskew {
