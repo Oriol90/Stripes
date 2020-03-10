@@ -67,7 +67,9 @@
   /*1rem = 16px*/ }
 
 html, body {
-  height: 100vh; }
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden; }
 
 .row {
   margin-right: 0px; }

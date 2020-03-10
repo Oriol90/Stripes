@@ -5,6 +5,8 @@ $colorFr:#244F75,#60BFBF,#8C4B7E,#F8BB44,#F24B4B;
 
 html,body{
     height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .row{
